@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip-your-needful-style {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  }
+}
+@layer components {
+  .for_all_p_tags {
+    @apply font-[Poppins-Regular] text-base text-[#616161] xl:w-[26rem] sm:w-[20rem] mt-5 mb-7;
+  }
+}
+
+@layer components {
+  .for_all_arrow_animation {
+    @apply bg-gradient-to-br from-[#FF4F00] via-[#FF4F00] space-x-3 to-[#FF0000] justify-center cursor-pointer
+         items-center rounded-full flex w-[64%] h-[20%] content-center m-auto md:m-0 mt-8 md:mt-0;
+  }
+}
+.user-edit button {
+  font-size: 12px;
+  min-width: 120px;
+  max-width: 120px;
+  max-height: 40px;
+}
